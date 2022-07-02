@@ -1,0 +1,34 @@
+<script>
+    //IN data
+   const BREAK_POINTXS  = 560
+   const BREAK_POINTS   = 980
+   const BREAK_POINTM   = 1200
+   const BREAK_POINTL   = 1920
+   const BREAK_POINT2K  = 3840
+   const BREAK_POINT4K  = 7680
+
+   let windowWidth = innerWidth
+
+//Decision / Adaptive
+
+if ( windowWidth <=BREAK_POINTXS ) {
+    alert( "extra small: " + windowWidth)
+} else if (windowWidth <= BREAK_POINTS) {
+    alert("small: " + windowWidth)
+}  
+ else if (windowWidth <= BREAK_POINTM) {
+    alert("DESKTOP medium: " + windowWidth)
+}  
+ else if (windowWidth <= BREAK_POINTL) {
+    alert("DESKTOP large: " + windowWidth)
+}  
+ else if (windowWidth <= BREAK_POINT2K) {
+    alert("DESKTOP 2K: " + windowWidth)
+}  
+ else if (windowWidth <= BREAK_POINT4K) {
+    alert("DESKTOP 4K: " + windowWidth)
+}  else {
+    alert( "ERROR" )
+}
+
+</script>
